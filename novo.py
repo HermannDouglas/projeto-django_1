@@ -1,2 +1,0 @@
-# Testando
-# Autor: Hermann Douglas
