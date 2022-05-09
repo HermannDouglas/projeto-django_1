@@ -1,3 +1,4 @@
+from email.policy import default
 from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
@@ -22,8 +23,8 @@ class Recipe(models.Model):
     preparation_steps_is_html = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    is_publised = models.BooleanField(default=False)
-    cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/')
+    is_published = models.BooleanField(default=False)
+    cover = models.ImageField(upload_to='recipes/covers/%Y/%m/%d/', blank = True, default='')
     category = models.ForeignKey(
         Category, on_delete=models.SET_NULL, null=True)
     author = models.ForeignKey(
