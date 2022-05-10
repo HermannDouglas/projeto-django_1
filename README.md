@@ -1,3 +1,3 @@
-# projeto-django_1
+# project-django_1
 
-Testando projeto em Django.
+Testando project em Django.
