@@ -1,3 +1,3 @@
 # project-django_1
 
-Testando project em Django.
+Projeto site de receitas.
