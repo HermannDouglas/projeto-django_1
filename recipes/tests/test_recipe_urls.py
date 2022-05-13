@@ -2,7 +2,6 @@ from django.test import TestCase
 from django.urls import reverse
 
 
-# Create your tests here.
 class RecipesURLsTest(TestCase):
     def test_recipe_home_url_is_correct(self):
         url = reverse('recipes:home')
@@ -14,4 +13,4 @@ class RecipesURLsTest(TestCase):
 
     def test_recipe_detail_url_is_correct(self):
         url = reverse('recipes:recipe', kwargs={'id': 1})
-        self.assertEqual(url, '/recipes/1/a')
+        self.assertEqual(url, '/recipes/1/')
